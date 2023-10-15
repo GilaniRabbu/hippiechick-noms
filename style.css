@@ -221,25 +221,31 @@ nav a:hover {
 /* Homepage */
 
 .hero {
+    color: var(--clr-light);
     background-color: #555;
     background-image: url(img/hero-img.png);
     background-blend-mode: multiply;
     background-attachment: fixed;
     background-size: cover;
-    color: var(--clr-light);
     text-align: center;
     padding: 15vh 1em;
 }
 
-.intro {
-    background-color: rgb(85, 85, 85, 0.3);
+.intro,
+.product-showcase {
+    background-color: #DDD;
+    background-image: url(img/light-patten.svg);
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .about-us {
+    color: var(--clr-light);
     background: var(--clr-accent);
     display: flex;
     flex-direction: column;
-    color: var(--clr-light);
     padding: 0;
 }
 
@@ -264,6 +270,10 @@ nav a:hover {
 
 
 /* Product Section */
+
+.product-showcase {
+    padding: 3em 1em 6em;
+}
 
 .products {
     display: flex;
@@ -301,8 +311,8 @@ nav a:hover {
 }
 
 .fine-print {
-    font-size: 0.75rem;
     color: #111;
+    font-size: 0.75rem;
 }
 
 /* Product Section */
@@ -312,13 +322,12 @@ nav a:hover {
 /* Footer */
 
 footer {
-    background: var(--clr-accent-dark);
     color: var(--clr-light);
+    background: var(--clr-accent-dark);
     padding: 3em 1em;
     display: flex;
     justify-content: center;
     gap: 5em;
-    margin-top: 3em;
 }
 
 footer a {
